@@ -12,7 +12,7 @@ import java.util.Optional;
 @RequestMapping("/api/v1/movies")
 public class MovieController {
 
-    @Autowired
+    @Autowired // Autowired instantiates MovieService for us
     private MovieService service;
 
     @GetMapping
