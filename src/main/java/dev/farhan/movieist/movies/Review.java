@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor @NoArgsConstructor
 public class Review {
+  // TODO why doesn't this have @Id annotation like in Movie.java?
     private ObjectId id;
     private String body;
     private LocalDateTime created;

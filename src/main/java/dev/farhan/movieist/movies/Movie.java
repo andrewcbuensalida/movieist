@@ -24,7 +24,7 @@ public class Movie {
     private String poster;
     private List<String> backdrops;
     private List<String> genres;
-    @DocumentReference
+    @DocumentReference // only saves the foreign key, not the actual review
     private List<Review> reviews;
 
     public Movie(String imdbId, String title, String releaseDate, String trailerLink, String poster, List<String> backdrops, List<String> genres) {
